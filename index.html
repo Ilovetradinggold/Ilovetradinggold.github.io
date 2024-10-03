@@ -3,198 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parris Taylor | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="CapitalP.ico">
+    <title>Chef's Web Kitchen</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Merienda:wght@300..900&family=Sedgwick+Ave+Display&display=swap');
+        </style>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Parris Taylor</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact-info">Contact Info</a></li>
-                </ul>
-            </nav>
+
+    <!-- Home Video Section -->
+    <section class="home-video" id="home-video">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="assets/images/expertisebg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
+        <div class="scroll-down">
+            <p>Scroll Down</p>
+            <span>&darr;</span>
+        </div>
+    </section>
+
+    <!-- Navigation Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#contact"><strong>Contact Us</strong></a></li>
+                <li><a href="#websites"><strong>Websites</strong></a></li>
+                <li><a href="#apps"><strong>Apps</strong></a></li>
+                <li class="logo"><img src="assets/images/Cwklogo-circle2.png" alt="Chef's Web Kitchen Logo"></li>
+                <li><a href="#process"><strong>Process</strong></a></li>
+                <li><a href="#packages"><strong>Packages</strong></a></li>
+                <li><a href="#about"><strong>About Us</strong></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="about" class="section-light">
-            <h2>About Me</h2>
-            <p>Welcome to my Portfolio! My name is Parris Taylor, a driven and motivated individual with a passion for problem-solving and bringing ideas to life. Whether it's tackling complex projects or pursuing innovative solutions, I thrive in environments that challenge me to grow and learn.<br><br>
-                With a strong work ethic and unwavering dedication to excellence, I've honed my ability to connect with people, communicate effectively, and deliver high-quality results under any circumstances. My commitment to creating value and making a positive impact drives me to continually learn, improve, and push beyond my limits.<br><br>
-                I have a deep love for finance! I studied Accounting at Florida Atlantic University, which laid a solid foundation for my career aspirations. Currently, I'm preparing for the SIE, Series 7, and Series 66 exams to further advance my career in finance and securities. I bring a unique perspective to the field, leveraging my skills to drive innovation and growth.<br><br>
-                In addition to my passion for finance, I have a strong background in coding, with expertise in over 10 programming languages. I've applied these skills to various projects, including market research, bot development, model development, building datasets, analyzing company data, and bookkeeping.<br><br>
-                I'm excited to share my projects and experiences with you. I hope that my work inspires and showcases my skills, and I look forward to collaborating with like-minded individuals and companies who share my passion for innovation, growth, and excellence.</p>
-                
-        </section>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <h1 class="bounce-text">
+            <span>Welcome</span>&nbsp;
+            <span>to</span>&nbsp;
+            <span>Chef's</span>&nbsp;
+            <span>Web</span>&nbsp;
+            <span>Kitchen</span>&nbsp;
+        </h1>
+        <h3> Crafting Tailor-Made Websites and Apps to fit your Brand</h3> 
+    </section>
 
-        <section id="experience" class="section-dark">
-            <h2>Experience</h2>
-
-            <div class="experience-item">
-                <img src="assets/images/FXChoice-Logo.jpg" alt="FX Choice Logo">
-                <div class="experience-description">
-                    <h3>FX Choice - Market Analyst</h3>
-                    <h4>Belize City, Belize/Remote (09/2020 - 12/2023)</h4>
-                    <p>- Conduct daily technical and fundamental analysis of financial markets including stocks, commodities, derivatives, forex, and bonds.<br><br>
-                        - Designed and built an AI-based stock analysis software that provides real-time performance analysis of stocks and companies. The software uses machine learning algorithms to assess market trends, company financials, sec filings, and news sentiment.<br><br>
-                        - Utilize various day-trading strategies to execute high-frequency trades and maintain proper risk-management dependent upon the asset being traded.<br><br>
-                        - Achieved 191.27% Total Growth in 2023, Day-Trading the Gold market (XAUUSD)<br><br>
-                        - Attended the International Futures Industry Conference in Boca Raton, FL (2023)</p>
-                </div>
+    <!-- Websites Section with Scrolling Text and List -->
+    <section class="websites" id="websites">
+        <h2>WE'RE SERVING UP DIGITAL MASTERPIECES THAT SIZZLE WITH FUNCTIONALITY & FLAVOR</h2><br>
+        <p><strong>Vital Ingredients Every Website NEEDS, That We Are EXPERTS On:</strong></p>
+        <div class="scroll-text-container">
+            <h1 class="scroll-text"></h1>
+            <div class="scroll-list-container">
+                <ul class="scroll-list scroll-list-left"></ul>
+                <ul class="scroll-list scroll-list-right"></ul>
             </div>
-            <div class="experience-item">
-                <img src="assets/images/Green-Deluxe-Logo.png" alt="Green Deluxe Logo">
-                <div class="experience-description">
-                    <h3>Green Deluxe Holdings LLC - Data Analyst</h3>
-                    <h4>Sheridan, WY/Remote (09/2021 - 03/2024)</h4>
-                    <p>- Utilized SQL, R, and Python to extract, transform, and analyze large datasets, enhancing decision-making processes for financial planning and predictive modeling.<br><br>
-                        - Developed and implemented financial models and forecasting tools that improved market research accuracy and optimized marketing strategies.<br><br>
-                        - Applied machine learning techniques and AI development skills to create predictive models, identifying key financial trends and reducing forecast errors.<br><br>
-                        - Collaborated with cloud computing teams to integrate data analysis insights into cloud computing platforms like Azure and AWS, improving operational efficiency.<br><br>
-                        - Automated data workflows using Python and R scripts, reducing data processing time by 20% and improving overall reporting accuracy.<br><br>
-                        - Conducted market research and data analysis to support strategic business initiatives.</p>
-                </div>
-            </div>
+        </div>
+    </section>
 
-            <div class="experience-item">
-                <img src="assets/images/SoFloDeluxeLogo.jpg" alt="SoFlo Deluxe">
-                <div class="experience-description">
-                    <h3>SoFlo Deluxe Auto LLC - Owner</h3>
-                    <h4>Boca Raton, FL (01/2022 - 01/2024)</h4>
-                    <p>- Managed daily operations of a South Florida based auto company that provided rental cars, ridesharing services, interior design services, and minor repairs/maintenance.<br><br>
-                       - Daily operations included lead generation, bookkeeping, setting and fulfilling appointments, marketing, market research, customer service and support, staff management (on-call staff), inventory sourcing, design development, invoicing, maintaining compliance, graphic design, and quality control.<br><br>
-                       - Increased monthly profits by 300% in one quarter (Q3 2022) through the hiring of multiple drivers and establishing a program for temporary gig workers.<br><br>
-                       - Established and maintained strong client relationships, ensuring high client satisfaction and driving repeat business through personalized and consistent high quality service.<br><br>
-                       - Supervised and trained a small team of drivers, engineers, and technicians, providing feedback and guidance to aid employee development and maintaining a 100% employee retention rate for 2 years.<br><br>
-                       - Developed and executed multiple marketing strategies, including social media advertising, pay-per-click advertising, promotional offers, ambush marketing, street team marketing, and strategic partnerships to increase brand awareness and expand the client base.<br><br>
-                       - Established a partnership with Publix to secure discounted advertising rates, enhancing business reach and driving revenue growth. Forged a strategic alliance with P.H. Detailing in Palm Beach County to offer clients a comprehensive suite of services, resulting in increased client loyalty and additional revenue through referral fees and package deals.</p>
-                </div>
-            </div>
+    <!-- Apps Section -->
+    <section class="apps" id="apps">
+        <h2>Apps</h2>
+        <p>We offer full-cycle mobile app development services, ensuring your app is optimized, engaging, and user-friendly.</p>
+    </section>
 
-            <div class="experience-item">
-                <img src="assets/images/moneysolver_logo.jpg" alt="MoneySolver">
-                <div class="experience-description">
-                    <h3>Tax Defense Network LLC - Solutions Analyst</h3>
-                    <h4>Jacksonville, FL (06/2021 - 10/2021)</h4>
-                    <p>- Successfully assisted over 100 clients in one quarter with the company, demonstrating exceptional customer service and problem-solving skills.<br><br>
-                       - Managed a high volume of inbound and outbound calls, including both warm leads and cold calls, to drive sales and customer engagement.<br><br>
-                       - Multitasked to survey and record customer information, ensuring accurate and efficient data collection.<br><br>
-                       - Developed and maintained a strong knowledge of company services to provide expert assistance to clients.</p>
-                </div>
-            </div>
-        </section>
+  <!-- Services and Pricing Section -->
+  <section class="services" id="packages">
+    <h2>Our Packages</h2>
+    <div class="package-grid">
+        <div class="package">
+            <h3>Taste Bud Sampler</h3>
+            <p>A basic package offering a simple, professional design.</p>
+            <p><strong>$100</strong></p>
+            <a href="#">Select this package</a>
+        </div>
+        <div class="package">
+            <h3>Main Course</h3>
+            <p>An advanced package offering more features and customization options.</p>
+            <p><strong>$250</strong></p>
+            <a href="#">Select this package</a>
+        </div>
+        <div class="package">
+            <h3>Bite-Sized Business</h3>
+            <p>A mid-range package ideal for small businesses looking for a solid web presence.</p>
+            <p><strong>$500</strong></p>
+            <a href="#">Select this package</a>
+        </div>
+        <div class="package">
+            <h3>Your Choice Five-Course Meal</h3>
+            <p>A fully customizable package tailored to your specific business needs.</p>
+            <p><strong>Starting @ $1,000</strong></p>
+            <a href="#">Select this package</a>
+        </div>
+        <div class="package">
+            <h3>Influencer Ice Cream</h3>
+            <p>A package designed for influencers, bloggers, and social media creators.</p>
+            <p><strong>Starting @ $100</strong></p>
+            <a href="#">Select this package</a>
+        </div>
+        <div class="package">
+            <h3>App & Dinner</h3>
+            <p>A premium package offering web and mobile app design and development.</p>
+            <p><strong>Starting @ $1,000</strong></p>
+            <a href="#">Select this package</a>
+        </div>
+    </div>
 
-        <section id="projects" class="section-light">
-            <h2>Projects</h2>
+    <h2>Additional Services</h2>
+    <ul class="addons">
+        <li>Chef's Design (Leave the entire creative process up to us! Price depends on package/needs.)</li>
+        <li>SEO Optimization</li>
+        <li>Revisions</li>
+        <li>Custom Graphics</li>
+        <li>Content Writing</li>
+        <li>Blog Management</li>
+        <li>Long Term Web Management</li>
+        <li>Analytics & Strategy</li>
+    </ul>
+</section>
 
-            <div class="projects-item">
-                <img src="assets/images/MarketCreatorsLogo.JPG" alt="MarketCreatorsLogo">
-                <div class="project-description">
-                    <h3>Market Creators Community</h3>
-                    <p>Our community is dedicated to providing free educational materials, including infographics, personal mentorship, and sharing of personal trade entries, to help individuals learn about trading and improve their skills. Please note that we do not provide investment advice or personalized recommendations.<br><br>
-                       Our goal is to empower individuals with knowledge and insights, enabling them to make informed decisions about their own trading activities. We believe that education and community support are essential for success in the trading world.</p><br>
-                    <p>Below is my Personal Full 2023 Trading Report</p>
-                    <a href="assets/images/Market-Creators-Trading2023FY.pdf" target="_blank">View PDF</a>
-                </div>
-            </div>
+    <!-- Portfolio and Process Section -->
+    <section class="gallery" id="process">
+        <h2>Our Work</h2>
+        <div class="grid">
+            <img src="work1.jpg" alt="Work 1">
+            <img src="work2.jpg" alt="Work 2">
+            <img src="work3.jpg" alt="Work 3">
+            <img src="work4.jpg" alt="Work 4">
+            <img src="work5.jpg" alt="Work 5">
+            <img src="work6.jpg" alt="Work 6">
+        </div>
+    </section>
 
-            <div class="projects-item">
-                <img src="assets/images/stock-bot.png" alt="Robot looking at stocks">
-                <div class="project-description">
-                    <h3>Open Source AI Stock Analysis Crew</h3>
-                    <p>Meet the AI Stock Analysis Crew, a revolutionary open-source project that harnesses the power of machine learning, data visualization, and web scraping to provide a comprehensive analysis of stocks. This innovative crew is designed to process vast amounts of data from various sources, including market trends, company financials, SEC filings, and news sentiment, to provide a data-driven assessment of stocks.</p><br>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                    <h4>How it Works:</h4>
-                    <p>The AI Stock Analysis Crew is built on a robust framework that integrates multiple APIs, web scraping, and machine learning algorithms to analyze stocks from various angles. The crew's advanced algorithms process large datasets to identify patterns, trends, and correlations, providing a comprehensive view of each stock.</p><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                    <h4>Key Features:</h4>
-                    <p>Market Trend Analysis: The crew analyzes market trends to identify patterns and trends that may impact stock performance.<br>
-                       Company Financial Analysis: The crew assesses company financials, including income statements, balance sheets, and cash flow statements, to provide a comprehensive view of a company's financial health.<br>
-                       SEC Filing Analysis: The crew analyzes SEC filings to identify potential risks, opportunities, executive notes, and trends that may impact stock performance.<br>
-                       News Sentiment Analysis: The crew analyzes news sentiment to identify trends and patterns in media coverage that may impact stock performance.<br>
-                       Machine Learning: Advanced machine learning algorithms analyze the aggregated data to identify patterns, trends, and correlations, providing a comprehensive view of each stock.<br>
-                       Data Visualization: Interactive visualizations provide a clear and concise representation of the data, enabling users to quickly understand complex information.<br>
-                       Web Scraping: The crew's web scraping capabilities gather data from various online sources, ensuring that the analysis is based on the most up-to-date information.</p><br>
+            <label for="package">Ideal Package:</label>
+            <select id="package" name="package" required>
+                <option value="taste-bud-sampler">Taste Bud Sampler</option>
+                <option value="main-course">Main Course</option>
+                <option value="bite-sized-business">Bite-Sized Business</option>
+                <option value="five-course-meal">Your Choice Five-Course Meal</option>
+                <option value="influencer-ice-cream">Influencer Ice Cream</option>
+                <option value="app-and-dinner">App & Dinner</option>
+            </select>
 
-                    <h4>Output:</h4>
-                    <p>The AI Stock Analysis Crew provides a data-driven assessment of each stock, categorizing it into one of three categories:<br>
-                       Short-Term Consideration: Stocks that exhibit characteristics suitable for short-term trading strategies.<br>
-                       Long-Term Consideration: Stocks that demonstrate potential for long-term growth and stability.<br>
-                       Avoid: Stocks that do not meet the crew's criteria for investment consideration.</p><br>
+            <label for="details">Questions or Details:</label>
+            <textarea id="details" name="details" rows="5" required></textarea>
 
-                    <h4>Disclaimer:</h4>
-                    <p>The AI Stock Analysis Crew is a tool designed to provide a data-driven perspective on stocks. It is not intended to provide investment advice or recommendations. The crew's output should not be considered a substitute for individual research, due diligence, or professional advice.</p>
-                </div>
-            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-            <div class="projects-item">
-                <img src="assets/images/chart-laptop.jpg" alt="Trading Laptop">
-                <div class="project-description">
-                    <h3>Market Creator's Gold Day Trading Bot</h3>
-                    <p>Market Creator's Gold Trading Bot, a private automated trading system designed to identify and capitalize on profitable trading opportunities in the gold market. This powerful bot uses a complex algorithm to analyze market data and execute trades based on specific conditions, ensuring maximum profits and minimizing losses.</p><br>
-
-                    <h4>How it Works:</h4>
-                    <p>The Gold Day Trading Bot uses a combination of technical indicators and advanced algorithms to identify profitable trading opportunities. The bot analyzes market data in real-time, looking for specific conditions that indicate a potential trade. Once a trade is identified, the bot executes a long or short position and utilizes a trailing stop to maximize profits.</p><br>
-
-                    <h4>Key Features:</h4>
-                    <p>Advanced Algorithm: The bot uses a complex algorithm that combines multiple technical indicators, including Simple Moving Averages, Keltner channels, and Volumes to identify profitable trades.<br>
-                       Real-Time Market Analysis: The bot analyzes market data in real-time, allowing it to quickly respond to changing market conditions.<br>
-                       Trailing Stop: The bot uses a trailing stop to maximize profits and minimize losses.<br>
-                       Automated Trading: The bot executes trades automatically, eliminating the need for manual intervention.</p><br>
-
-                    <h4>Disclaimer:</h4>
-                    <p>The Gold Day Trading Bot is a private automated trading system, but it is not a guarantee of profits. Trading carries risk, and users should be aware of the potential for losses.</p>
-                </div>
-            </div>
-
-            <div class="projects-item">
-                <img src="assets/images/sports-model-logo.png" alt="Sports Model Logo">
-                <div class="project-description">
-                    <h3>Sports Statistic Projection Model</h3>
-                    <p>Parris's AI Sports Statistic Projection Model (Private Project), a cutting-edge tool that uses machine learning to analyze derivative sports betting markets and identify profitable arbitrage opportunities. By leveraging a combination of advanced algorithms and data sources, this model provides users with accurate statistical projections and actionable betting insights.</p><br>
-
-                    <h4>How it Works:</h4>
-                    <p>The AI Sports Statistic Projection Model uses a combination of machine learning algorithms and data sources to generate statistical projections for specific players or teams. The model aggregates data from various APIs, including sports data providers and news sources, to create a comprehensive view of each team or player. The model then uses this data to generate statistical projections, including projected points, yards, and other relevant metrics.</p><br>
-
-                    <h4>Key Features:</h4>
-                    <p>Machine Learning Algorithms: The model uses a combination of machine learning algorithms, including TensorFlow, scikit-learn, and statsmodels, to analyze data and generate statistical projections.<br>
-                       Data Aggregation: The model aggregates data from various APIs, including sports data providers and news sources, to create a comprehensive view of each team or player.<br>
-                       Web Scraping: The model uses web scraping techniques to gather data from online sources, including news articles and sports websites.<br>
-                       Langchain and Groq Fast Inference: The model uses Langchain and Groq fast inference to accelerate the processing of large datasets and generate rapid insights.<br>
-                       Matplotlib Visualization: The model uses Matplotlib to generate interactive visualizations of statistical projections and betting reports.</p><br>
-
-                    <h4>Output:</h4>
-                    <p>The AI Sports Statistic Projection Model generates a comprehensive betting report for each team or player, including:<br>
-                       Statistical Projections: The model generates statistical projections for each team or player, including projected points, yards, and other relevant metrics.<br>
-                       Market Odds: The model provides real-time market odds for each team or player, allowing users to identify profitable arbitrage opportunities.<br>
-                       Betting Report: The model generates a comprehensive betting report, including statistical projections, market odds, and actionable betting insights.</p><br>
-
-                    <h4>Disclaimer:</h4>
-                    <p>The AI Sports Statistic Projection Model is a tool designed to provide statistical insights and projections for sports betting markets. It is not intended to provide investment advice or guarantee profitable betting outcomes. Users should use the model's output as one tool among many in their decision-making process and should not rely solely on the model's projections when making betting decisions.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact-info" class="section-dark">
-            <h2>Contact Info</h2>
-            <p>Email: <a href="mailto:Parristaylor17@gmail.com">Parristaylor17@gmail.com</a><br>
-               LinkedIn: <a href="https://www.linkedin.com/in/parris-taylor-mc23" target="_blank">linkedin.com/in/parris-taylor-mc23</a><br>
-               GitHub: <a href="https://www.github.com/Ilovetradinggold" target="_blank">github.com/Ilovetradinggold</a><br>
-               Jacksonville, Florida, United States</p>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Parris Taylor.</p>
+        <h2>Connect with Us</h2>
+        <div class="social-media">
+            <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/yourusername" target="_blank">X</a>
+            <a href="https://www.tiktok.com/@yourusername" target="_blank">TikTok</a>
+        </div>
     </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        const texts = ["Psych-Design","Psych-Design", "SEO Mastery", "Complex Features", "Performance Insights"];
+        const lists = [
+            ["User Research", "Visual Aesthetics", "Emotional Impact","Information Architecture", "Behavioral Science", "Experience Optimization"],
+            ["User Research", "Visual Aesthetics", "Emotional Impact","Information Architecture", "Behavioral Science", "Experience Optimization"],
+            ["Keyword Optimization", "Content Strategy", "On-page SEO", "Technical SEO", "Performance Tracking", "Backlink Building"],
+            ["Custom Design", "API Integration", "CMS/CRM Integration", "Animations", "Multi-Device Compatibility", "Database Setup"],
+            ["Traffic Analysis", "User Behavior Tracking", "Conversion Rate Optimization", "Performance Audits", "Tuning", "A/B Testing and Experimentation"]
+        ];
+
+        let currentIndex = -1;
+        const textElement = document.querySelector('.scroll-text');
+        const leftListElement = document.querySelector('.scroll-list-left');
+        const rightListElement = document.querySelector('.scroll-list-right');
+        const websitesSection = document.getElementById('websites');
+        const scrollTextContainer = document.querySelector('.scroll-text-container');
+
+        const changeContent = (index) => {
+            if (index === currentIndex) return;
+            currentIndex = index;
+            
+            textElement.textContent = texts[currentIndex];
+            const currentList = lists[currentIndex];
+            const midpoint = Math.ceil(currentList.length / 2);
+
+            leftListElement.innerHTML = currentList.slice(0, midpoint)
+                .map(item => `<li class="scroll-list-item">${item}</li>`).join('');
+            rightListElement.innerHTML = currentList.slice(midpoint)
+                .map(item => `<li class="scroll-list-item">${item}</li>`).join('');
+
+            // Trigger animation after a short delay
+            setTimeout(animateListItems, 100);
+        };
+
+        const animateListItems = () => {
+            const listItems = document.querySelectorAll('.scroll-list-item');
+            listItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('show');
+                }, index * 100);
+            });
+        };
+
+        window.addEventListener('scroll', () => {
+            const rect = websitesSection.getBoundingClientRect();
+            const scrollPosition = window.scrollY;
+            const sectionTop = rect.top + scrollPosition;
+            const sectionHeight = rect.height;
+            const viewportHeight = window.innerHeight;
+
+            if (scrollPosition > sectionTop - viewportHeight && scrollPosition < sectionTop + sectionHeight) {
+                const progress = (scrollPosition - (sectionTop - viewportHeight)) / sectionHeight;
+                const newIndex = Math.floor(progress * texts.length);
+                
+                if (newIndex !== currentIndex && newIndex < texts.length) {
+                    changeContent(newIndex);
+                }
+
+                scrollTextContainer.style.opacity = 1;
+            } else {
+                scrollTextContainer.style.opacity = 0;
+            }
+
+            if (scrollPosition > sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                scrollTextContainer.style.position = 'sticky';
+                scrollTextContainer.style.top = '0';
+            } else {
+                scrollTextContainer.style.position = 'relative';
+            }
+        });
+
+        // Initial content load
+        changeContent(0);
+    </script>
+
 </body>
 </html>
