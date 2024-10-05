@@ -192,4 +192,6 @@ footer {
         height: auto;
         width: auto;
     }
+    .hero h1 {
+        font-size: 25px;}
 }
