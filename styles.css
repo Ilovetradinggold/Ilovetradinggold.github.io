@@ -49,9 +49,7 @@ main {
     color: white; /* Base text color */
     text-align: center;
     font-family: "skranji-regular";
-    text-shadow:
-    /* regular text-shadow */
-    0 .15ch 15px var(--shadow),
+    text-shadow: 0 .15ch 15px var(--shadow),
     /* text-shadow highlight */
     0 -2px 0 var(--highlight);
     --hue: 55; /* change me */
@@ -187,5 +185,11 @@ footer {
         font-size: 25px;}
     span {
         font-size: 80px;
+    }
+}
+@media (max-width: 1024px) {
+    .body {
+        height: auto;
+        width: auto;
     }
 }
