@@ -179,7 +179,7 @@ footer {
         width: 100%;
     }
     .body {
-        height: auto;
+        height: 200vh;
         width: auto;
     }
     .hero h1 {
