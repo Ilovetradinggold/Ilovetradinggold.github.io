@@ -1,6 +1,6 @@
 /* General Styles */
 html, body {
-    height: 150vh;
+    min-height: 100vh;  /* Allow the body to grow based on content */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -11,20 +11,20 @@ html, body {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    background-repeat: no-repeat;
     color: #333;
     line-height: 1.6;
     text-align: center;
+    overflow-x: hidden;  /* Prevent any horizontal scrolling */
 }
 
 main {
-    flex: 1;
+    flex-grow: 1;  /* Allow main content to take up remaining space */
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 10px;
 }
-/* Fonts */
 
+/* Fonts */
 .skranji-regular {
   font-family: "Skranji", system-ui;
   font-weight: 400;
@@ -37,7 +37,6 @@ main {
   font-style: normal;
 }
 
-
 /* Hero Section */
 .hero {
     background-color: transparent;
@@ -49,42 +48,37 @@ main {
     font-size: 40px;
     color: white; /* Base text color */
     text-align: center;
-    font-family: "skranji-regular";
-    text-shadow: 0 .15ch 15px var(--shadow),
-    /* text-shadow highlight */
-    0 -2px 0 var(--highlight);
+    font-family: "Skranji", sans-serif;
+    text-shadow: 0 .15ch 15px var(--shadow), 0 -2px 0 var(--highlight);
     --hue: 55; /* change me */
-  --bg: oklch(35% .3 var(--hue));
-  --text: oklch(85% .1 var(--hue));
-  --shadow: oklch(25% .2 var(--hue));
-  --highlight: oklch(98% .05 var(--hue));
+    --bg: oklch(35% .3 var(--hue));
+    --text: oklch(85% .1 var(--hue));
+    --shadow: oklch(25% .2 var(--hue));
+    --highlight: oklch(98% .05 var(--hue));
 }
 
 span {
-    font-family:"skranji-bold";
+    font-family:"Skranji", sans-serif;
     letter-spacing: 0;
     padding: .25em 0 .325em;
     display: block;
     margin: 0 auto;
     font-size: 150px;
     text-shadow: 0 0 80px rgba(255,255,255,.5);
-/* Clip Background Image */
+
+    /* Clip Background Image */
     background: url("https://i.ibb.co/RDTnNrT/animated-text-fill.png") repeat-y;
     -webkit-background-clip: text;
     background-clip: text;
-/* Animate Background Image */
+
+    /* Animate Background Image */
     -webkit-text-fill-color: transparent;
     -webkit-animation: aitf 80s linear infinite;
-
-/* Activate hardware acceleration for smoother animations */
-
     -webkit-transform: translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
-
-    }
+}
 
 /* Animate Background Image */
-
 @-webkit-keyframes aitf {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
@@ -174,25 +168,27 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
     .card {
         width: 100%;
     }
     .body {
-        height: 150vh;
+        height: auto;
         width: auto;
     }
     .hero h1 {
-        font-size: 25px;}
+        font-size: 25px;
+    }
     span {
         font-size: 80px;
     }
 }
+
 @media (max-width: 1024px) {
     .body {
         height: auto;
         width: auto;
     }
     .hero h1 {
-        font-size: 25px;}
+        font-size: 25px;
+    }
 }
